@@ -1,13 +1,11 @@
 'use strict'
-
+var count=0;
 var name=prompt('What is your name?');
 
 alert ('Hello ' + name + ' Welcome to my page');
+
 var question1 =prompt('Here is the first question: ' + "Do I like hockey?" );
 var result1=question1.toLowerCase();
-
-var count=0;
-
 if (result1 =='y' || result1=='yes'){
   alert ('You are correct');
   count++;
@@ -16,6 +14,9 @@ if (result1 =='y' || result1=='yes'){
 } else {
   alert('Not a valid answer. Counts as a wrong answer');
 }
+console.log('The user answered question 1 with ' + question1);
+
+
 
 var question2 =prompt('Next question: ' + 'Do I have a dog?');
 var result2=question2.toLowerCase();
@@ -30,6 +31,7 @@ if (result2 =='y' || result2=='yes'){
   else {
    alert('Not a valid answer. Counts as a wrong answer'); 
   }
+console.log('The user answered question 2 with ' + question2);
 
 
 var question3 =prompt('Next question: ' + 'Do I have a cat?');
@@ -45,6 +47,8 @@ if (result3 =='y' || result3=='yes'){
   else {
    alert('Not a valid answer. Counts as a wrong answer'); 
   }
+console.log('The user answered question 3 with ' + question3);
+
 
 
 var question4 =prompt('Next question: ' + 'Am I a good soccer player?');
@@ -60,13 +64,15 @@ if (result4 =='y' || result4=='yes'){
   else {
    alert('Not a valid answer. Counts as a wrong answer');
   }
+  console.log('The user answered question 4 with ' + question4);
+
 
 
 var question5 =prompt('Next question: ' + 'Is chocolate my favorite ice-cream flavor?');
-var result5=question4.toLowerCase();
+var result5=question5.toLowerCase();
 
 if (result5 =='y' || result5=='yes'){
-  alert ('Sorry to disappoint');
+  alert ('I surprise myself, but no');
   
 } else if (result5 =='n' || result5=='no') {
   alert ('You are right!' );
@@ -76,5 +82,7 @@ if (result5 =='y' || result5=='yes'){
    alert('Not a valid answer. Counts as a wrong answer');
    
   }
+  console.log('The user answered question 5 with ' + question5);
+
 
   alert ('You answered ' + count + ' questions correctly')
