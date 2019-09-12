@@ -23,7 +23,7 @@ if (question1 == 'y' || question1 == 'yes') {
 } else {
   alert('Not a valid answer. Counts as a wrong answer');
 }
-console.log('The user answered question 1 with ' + question1);
+   console.log('The user answered question 1 with ' + question1); 
 }
 
 
@@ -145,41 +145,54 @@ alert('The correct answer is ' + correctNumber);
 
 // //Question 7
 
-
 function askQuestion7(){
 
-var countries = ['germany', 'canada', 'russia', 'poland', 'ukraine'];
+  var countries = ['germany', 'canada', 'russia', 'poland', 'ukraine'];
+  var attemptsNumber = 0; 
+  var success = false;
 
-var attemptsNumber = 6; 
-var success = false;
-for (var i = 0; i < attemptsNumber; i++) {
-  var countriesGuess = prompt('Name one of the countries I visited');
-  countriesGuess = countriesGuess.toLowerCase();
-  console.log('The user answered question 7 with ' + countriesGuess);
-  for (var x = 0; x < countries.length; x++) {
+  while (attemptsNumber <= 5 && !success) {
+    var countriesGuess = prompt('Name one of the countries I visited');
+    countriesGuess = countriesGuess.toLowerCase();
+    console.log('The user answered question 7 with ' + countriesGuess);
 
-    if (countries[x] === countriesGuess) {
-      alert('You got it');
-      count++;
-      success = true;
-      break;
+    for (var x = 0; x < countries.length; x++) {
+  
+      if (countries[x] === countriesGuess) {
+        alert('You got it');
+        count++;
+        success = true;
+    }
+  
     }
 
+    if (!success) {
+
+      if (attemptsNumber === 5) {
+
+          var morecountries = '';
+          for (var i = 0; i < countries.length; i++) {
+
+              morecountries += countries[i] + ', ';
+
+          }
+          alert('I visited  ' + morecountries);
+
+      }
+
+      else {
+
+          alert('Wrong answer try again');
+
+      }
+
+      attemptsNumber++;
+
   }
-  if (i === attemptsNumber || success == true) {
-    break;
-  } else {
-    alert('Keep trying');
-  }
-
-
-
-
-for (var y = 0; y < countries.length; y++) {
-  alert('Here is list of the countries: ' + countries[y]);
 }
+
 }
-}
+
 
 //The count of current correct answers
 function totalCorrectAnswers(){
