@@ -119,10 +119,11 @@ alert('The correct answer is ' + correctNumber);
 
 
 
-//Question 7
+//Question 7 
+
 var countries = ['germany', 'canada', 'russia', 'poland', 'ukraine'];
 
-var attemptsNumber = 6;
+var attemptsNumber = 6; 
 var success = false;
 for (var i = 0; i < attemptsNumber; i++) {
   var countriesGuess = prompt('Name one of the countries I visited');
@@ -145,6 +146,7 @@ for (var i = 0; i < attemptsNumber; i++) {
   }
 
 }
+
 
 
 for (var y = 0; y < countries.length; y++) {
