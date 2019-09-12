@@ -64,3 +64,7 @@ ul{
   list-style-position: inside;
   list-style-type: initial;
 }
+ol{
+  list-style-type: decimal;
+  list-style-position: inside;
+}
