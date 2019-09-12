@@ -1,12 +1,19 @@
-'use strict'
+'use strict';
+
+
 var count = 0;
+function getName(){
 var name = prompt('What is your name?');
 
 alert('Hello ' + name + ' Welcome to my page');
+}
 
 
-//Question 1
-var question1 = prompt('Here is the first question: ' + "Do I like hockey?");
+
+// //Question 1
+
+function askQuestion1 () {
+  var question1 = prompt('Here is the first question: ' + "Do I like hockey?");
 question1 = question1.toLowerCase();
 if (question1 == 'y' || question1 == 'yes') {
   alert('You are correct');
@@ -17,9 +24,14 @@ if (question1 == 'y' || question1 == 'yes') {
   alert('Not a valid answer. Counts as a wrong answer');
 }
 console.log('The user answered question 1 with ' + question1);
+}
 
 
-//Question 2
+
+
+// //Question 2
+
+function askQuestion2(){
 var question2 = prompt('Next question: ' + 'Do I have a dog?');
 var question2 = question2.toLowerCase();
 
@@ -34,8 +46,11 @@ else {
   alert('Not a valid answer. Counts as a wrong answer');
 }
 console.log('The user answered question 2 with ' + question2);
+}
 
-//Question 3
+// //Question 3
+
+function askQuestion3(){
 var question3 = prompt('Next question: ' + 'Do I have a cat?');
 var question3 = question3.toLowerCase();
 
@@ -50,9 +65,12 @@ else {
   alert('Not a valid answer. Counts as a wrong answer');
 }
 console.log('The user answered question 3 with ' + question3);
+}
 
 
-//Question 4
+// //Question 4
+
+function askQuestion4(){
 var question4 = prompt('Next question: ' + 'Am I a good soccer player?');
 var question4 = question4.toLowerCase();
 
@@ -67,9 +85,12 @@ else {
   alert('Not a valid answer. Counts as a wrong answer');
 }
 console.log('The user answered question 4 with ' + question4);
+}
 
 
-//Question 5
+// //Question 5
+
+function askQuestion5(){
 var question5 = prompt('Next question: ' + 'Is chocolate my favorite ice-cream flavor?');
 var question5 = question5.toLowerCase();
 
@@ -85,10 +106,12 @@ else {
 
 }
 console.log('The user answered question 5 with ' + question5);
+}
 
 
 
-//Question 6
+// //Question 6
+function askQuestion6 (){
 var question6 = 465;
 var correctNumber = 6;
 
@@ -116,10 +139,14 @@ for (var i = 0; i < 4; i++) {
 }
 
 alert('The correct answer is ' + correctNumber);
+}
 
 
 
-//Question 7 
+// //Question 7
+
+
+function askQuestion7(){
 
 var countries = ['germany', 'canada', 'russia', 'poland', 'ukraine'];
 
@@ -145,15 +172,26 @@ for (var i = 0; i < attemptsNumber; i++) {
     alert('Keep trying');
   }
 
-}
 
 
 
 for (var y = 0; y < countries.length; y++) {
   alert('Here is list of the countries: ' + countries[y]);
 }
+}
+}
 
 //The count of current correct answers
-alert('You answered ' + count + ' questions correctly')
+function totalCorrectAnswers(){
+alert('You answered ' + count + ' questions correctly');
+}
 
-
+getName();
+askQuestion1();
+askQuestion2();
+askQuestion3();
+askQuestion4();
+askQuestion5();
+askQuestion6();
+askQuestion7();
+totalCorrectAnswers();
