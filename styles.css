@@ -31,7 +31,7 @@ div{
   width: 600px;
   padding: 10px;
   background-color: aqua;
-  top: 27px;
+  top: 50px;
   margin: 50px;
   }
 
@@ -39,7 +39,7 @@ div{
   text-align: justify;
   font-size: 20px;
   position: relative;
-  bottom: -100px;
+  
 }
 
 #section2{
@@ -51,7 +51,18 @@ div{
   background-color: aqua;
   margin: 50px;
   }
-  
+
+h6{
+  text-align: left;
+}
+
+footer{
+  position: relative;
+  left: 150px;
+  border: 1px solid black;
+  width: 250px;
+}
+
 h6{
   text-align: center;
 }

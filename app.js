@@ -97,7 +97,7 @@ for (var i = 0; i < 4; i++) {
   while (question6 != correctNumber) {
     question6 = prompt('How many email accounts do I have? You have 4 guesses');
     question6 = parseInt(question6);
-
+    console.log('The user answered question 6 with ' + question6);
     if (question6 > correctNumber) {
       alert("You are too high");
       break;
@@ -127,7 +127,7 @@ var success = false;
 for (var i = 0; i < attemptsNumber; i++) {
   var countriesGuess = prompt('Name one of the countries I visited');
   countriesGuess = countriesGuess.toLowerCase();
-
+  console.log('The user answered question 7 with ' + countriesGuess);
   for (var x = 0; x < countries.length; x++) {
 
     if (countries[x] === countriesGuess) {
@@ -151,4 +151,7 @@ for (var y = 0; y < countries.length; y++) {
   alert('Here is list of the countries: ' + countries[y]);
 }
 
+//The count of current correct answers
 alert('You answered ' + count + ' questions correctly')
+
+
