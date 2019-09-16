@@ -13,7 +13,7 @@ function getName() {
 // //Question 1
 
 function askQuestion1() {
-  var question1 = prompt('Here is the first question: ' + "Do I like hockey?");
+  var question1 = prompt('Here is the first question: ' + 'Do I like hockey?');
   question1 = question1.toLowerCase();
   if (question1 === 'y' || question1 === 'yes') {
     alert('You are correct');
