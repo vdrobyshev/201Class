@@ -162,21 +162,27 @@ function askQuestion7() {
         alert('You got it');
         count++;
         success = true;
-      }
+        var morecountries = '';
+        for (var i = 0; i < countries.length; i++) {
+          morecountries += countries[i] + ', ';
 
+        }
+        alert('I visited  ' + morecountries);
+
+      }
     }
 
     if (!success) {
 
       if (attemptsNumber === 5) {
 
-        var morecountries = '';
+        var morecountries2 = '';
         for (var i = 0; i < countries.length; i++) {
 
-          morecountries += countries[i] + ', ';
+          morecountries2 += countries[i] + ', ';
 
         }
-        alert('I visited  ' + morecountries);
+        alert('I visited  ' + morecountries2);
 
       }
 
